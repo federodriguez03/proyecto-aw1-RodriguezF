@@ -50,6 +50,21 @@ section {
     border-radius: 8px;
 }
 
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+}
+
 footer {
     background-color: #3498db;
     color: white;
