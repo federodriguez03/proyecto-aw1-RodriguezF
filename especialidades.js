@@ -1,28 +1,24 @@
 const especialidades = {
-    categoria: "A-G",
-    especialidad: [
-        {opciones: "Cardiología"},
-        {opciones: "Dermatología"},
-        {opciones: "Endocrinología"},
-        {opciones: "Gastroenterología"}
+  opciones: {
+    A_G: [
+      { nombre: "Cardiología" },
+      { nombre: "Dermatología" },
+      { nombre: "Endocrinología" },
+      { nombre: "Gastroenterología" }
     ],
-    categoria: "H-O",
-    especialidad: [
-        {opciones: "Hematología"},
-        {opciones: "Infectología"},
-        {opciones: "Nefrología"},
-        {opciones: "Oftalmología"}
+    H_O: [
+      { nombre: "Hematología" },
+      { nombre: "Infectología" },
+      { nombre: "Neurología" },
+      { nombre: "Oftalmología" }
     ],
-    categoria: "P-U",
-    especialidad: [
-        {opciones:  "Pediatría"},
-        {opciones: "Química Clínica"},
-        {opciones: "Reumatología"},
-        {opciones: "Urología"}
-    ],
+    P_U: [
+      { nombre: "Pediatría" },
+      { nombre: "Química Clínica" },
+      { nombre: "Reumatología" },
+      { nombre: "Urología" }
+    ]
+  }
 };
 
-let RenderizadoHTML = `<label>${especialidades.nombre}</label>`
-export default especialidades //Permite importar por otro lado
-
-const esp = document.getElementById(especialidades)
+export default especialidades

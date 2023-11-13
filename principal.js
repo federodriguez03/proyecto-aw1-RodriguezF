@@ -1,27 +1,18 @@
-import especialidades from "./especialidades.js"
-import e from "./especialidades.js"
-//console.log(especialidades)
-//Referencia
-const contenedor = document.getElementById("especialidades")
-//principal.innerHTML = `<h2>${especialidades.categoria}</h2>`
+import especialidades from "./especialidades.js";
 
-especialidades.categoria.forEach(categorias => {
-    principal.innerHTML += `<section>
-    <label for="opciones">A-G</label>
-    <select id="opciones" name="opciones">
-        
-    </select>
-    <label for="opciones">${especialidades.categoria}</label>
-    <select id="opciones" name="opciones">
-        ${especialidades.nombre}
-    </select>
-    <label for="opciones">P-U</label>
-    <select id="opciones" name="opciones">
-     
-    </select>
-    <label for="opciones">W-Z</W-Z></label>
-    <select id="opciones" name="opciones">
-    </select>
-</section>`
+const contenedoresp = document.getElementById("contenedor");
 
+let contenidoEspecialidades = "";
+
+Object.keys(especialidades.opciones).forEach(rango => {
+  contenidoEspecialidades += `<label for="${rango}">${rango}</label>
+    <select id="${rango}" name="${rango}">`;
+
+  especialidades.opciones[rango].forEach(opcion => {
+    contenidoEspecialidades += `<option>${opcion.nombre}</option>`;
+  });
+
+  contenidoEspecialidades += `</select>`;
 });
+
+contenedoresp.innerHTML = contenidoEspecialidades;
