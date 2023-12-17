@@ -1,0 +1,191 @@
+/*--------GENERAL--------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --primary-color: #2a5574;
+    --secondary-color: #4194be;
+    --border-color: #2a4860;
+}
+
+/*--------NAVIGATION--------*/
+nav {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+a {
+    color: var(--border-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+
+/*--------HEADER--------*/
+header {
+    border-color: var(--border-color);
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 20px 0; 
+}
+
+/*--------FOOTER--------*/
+footer {
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h4{
+    color: var(--border-color);
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 15px 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+main {
+    padding: 20px;
+}
+
+.seccion-turnero {
+    background-color: #f2f2f2; 
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.seccion-turnero h3 {
+    color: #3498db; 
+}
+
+.seccion-turnero p {
+    margin: 10px 0;
+}
+
+
+.seccion-turnero form {
+    margin-top: 10px;
+}
+
+
+.seccion-turnero button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.seccion-turnero:last-child {
+    background-color: #e6f7ff; 
+}
+
+
+.turnos {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.turnos h3 {
+    color: #3498db;
+}
+
+.turnos p {
+    margin: 10px 0;
+}
+
+
+.turnos form {
+    margin: 10px 0;
+}
+
+.turnos form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.turnos form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+.turnos form button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.turnos h3:last-child {
+    margin-top: 20px;
+}
+
+
+#especialidades {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#contenedor {
+    text-align: center;
+}
+
+.categorias {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block; 
+}
+
+.opciones {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.nombres {
+    font-size: 16px;
+    margin-bottom: 10px; 
+    display: block; 
+}
